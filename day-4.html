@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSF 35</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        padding: 20px;
+        background-color: cyan;
+        justify-content: space-between;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      img {
+        width: 24%;
+      }
+
+      .img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+
+      .img1 {
+        grid-area: 1 / 1 / 3 / 2;
+      }
+      .img2 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .img3 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .img4 {
+        grid-area: 2 / 2 / 4 / 3;
+      }
+      .img5 {
+        grid-area: 1 / 3 / 3 / 4;
+      }
+      .img6 {
+        grid-area: 3 / 3 / 4 / 4;
+      }
+      .img7 {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+      .img8 {
+        grid-area: 2 / 4 / 4 / 5;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: 800px) {
+        h2 {
+          font-size: 20px;
+          color: red;
+        }
+
+        img {
+          width: 48%;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        h2 {
+          font-size: 20px;
+          color: red;
+        }
+
+        img {
+          width: 98%;
+        }
+      }
+
+      .about {
+        display: flex;
+        padding: 4%;
+        justify-content: space-between;
+      }
+      .text {
+        width: 40%;
+      }
+      .text p {
+        font-size: 12px;
+        padding-top: 10px;
+      }
+
+      .banner {
+        width: 50%;
+      }
+
+      .banner img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 480px) {
+        .about {
+          flex-direction: column;
+        }
+
+        .text,
+        .about {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>Logo</p>
+      <p>login</p>
+    </header>
+    <!-- <div class="wrapper">
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+    </div> -->
+
+    <!-- 
+    <h2> My Gallery</h2>
+    <div class="gallery">
+        <img class="img img1" src="https://picsum.photos/200/300" alt="">
+        <img class="img img2" src="https://picsum.photos/200/300" alt="">
+        <img class="img img3" src="https://picsum.photos/200/300" alt="">
+        <img class="img img4" src="https://picsum.photos/200/300" alt="">
+        <img class="img img5" src="https://picsum.photos/200/300" alt="">
+        <img class="img img6" src="https://picsum.photos/200/300" alt="">
+        <img class="img img7" src="https://picsum.photos/200/300" alt="">
+        <img class="img img8" src="https://picsum.photos/200/300" alt="">
+    </div> -->
+
+    <h2>My Gallery</h2>
+    <section class="about">
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias
+          labore animi, delectus rerum impedit saepe repellendus maiores
+          corporis cum nobis recusandae dolorum facilis similique ex
+          exercitationem quibusdam veritatis sequi!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias
+          labore animi, delectus rerum impedit saepe repellendus maiores
+          corporis cum nobis recusandae dolorum facilis similique ex
+          exercitationem quibusdam veritatis sequi!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias
+          labore animi, delectus rerum impedit saepe repellendus maiores
+          corporis cum nobis recusandae dolorum facilis similique ex
+          exercitationem quibusdam veritatis sequi!
+        </p>
+      </div>
+
+      <div class="banner">
+        <img src="https://picsum.photos/200/300" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
